@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+</head>
+<body>
+
+<script>
+var userLang = navigator.language || navigator.userLanguage;
+switch(userLang){
+    case 'de-DE':
+        window.location.href = '/de/index.html';
+        break;
+    case 'de':
+        window.location.href = '/de/index.html';
+        break;
+    default:
+        // if it's something else fall back to the default
+        window.location.href = '/en/index.html';
+        break;
+}
+</script>
+</body>
+</html>
